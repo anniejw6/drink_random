@@ -111,7 +111,7 @@ def record():
 	attributes = [('Donald Trump', 'fav_trump'), ('Jeb Bush', 'fav_bush'), 
 	('Scott Walker', 'fav_walker'), ('Ben Carson', 'fav_carson'), 
 	('Mike Huckabee', 'fav_huckabee'), ('Ted Cruz', 'fav_cruz'), 
-	('Marco Rubio', 'fav_rubio'), ('Ron Paul', 'fav_paul'), 
+	('Marco Rubio', 'fav_rubio'), ('Rand Paul', 'fav_paul'), 
 	('Chris Christie', 'fav_christie'), ('John Kasich', 'fav_kasich')]
 	random.shuffle(attributes)
 
