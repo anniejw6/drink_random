@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+
+{% block page_head %}
+Login
+{% endblock %}
+
+{% block content %}
+<div class = 'row'>
+
+  <div class="col-lg-12">
+  {% from "forms/macros.html" import render_field %}
+  <form method="POST" action="." class="form">
+    {{ form.csrf_token }}
+
+    <div class="form-group">
+    <p> The suggested username is the first letter of your first name and your full last name, e.g. 'jsmith'. </p>
+    {{ form.name.label }}
+    </br>
+    {{ form.name(size=20) }}
+    </div>
+
+    <button class="btn btn-default" type="submit">Submit</button>
+
+  </form>
+</div>
+</div>
+{% endblock %}

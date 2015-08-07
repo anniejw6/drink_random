@@ -1,0 +1,47 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+{% endblock %}
+
+{% block page_head %}
+Record Errors
+{% endblock %}
+
+{% block content %}
+
+<!-- <script src="{{ url_for('static', filename = 'js/spinner.js') }}"></script>  -->
+
+<div class="container">
+  <div class="form-group form-group-lg btn-lg">
+
+  <form action="." method = post>
+
+{{ form.hidden_tag() }}
+          <h3> Who won the debate? </h3>
+      {{ form.winner }}
+    </br></br>
+  <h3> How would you rate your feelings towards the following individuals? </h3>
+  </br>
+  {% for field in form %}
+    {% if field.widget.input_type != 'hidden' %}
+    {% if field.type == 'SelectField' %}
+    {% if field.id != 'winner' %}
+      {{field.label}} {{field}}
+        </br>
+        </br>
+    {% endif %}
+    {% endif %}
+    {% endif %}
+
+  {% endfor %}
+
+  {{ form.submit }}
+  </form>
+
+
+</div>
+
+</div>
+{% endblock %}

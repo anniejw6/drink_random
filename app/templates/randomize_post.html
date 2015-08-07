@@ -1,0 +1,38 @@
+{% extends "base.html" %}
+
+{% block script %}
+<script src="http://d3js.org/d3.v3.min.js"></script>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+{% endblock %}
+
+{% block page_head %}
+Receive Orders
+{% endblock %}
+
+{% block content %}
+
+<div class="container">
+
+	<div class="row">
+		<div class="col-xs-12">
+			<center>
+				<h1>{{ treat }}!</h1>
+			</center>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-xs-12">
+			<center>
+				<form action="{{ url_for('drink') }}">
+					<button class="btn btn-default btn-lg">
+					Drink again!
+					</button>
+				</center>
+			</form>
+			<!--  <center> <button class="btn btn-default" type="submit">Submit</button> </center> -->
+		</div>
+	</div>
+
+</div>
+{% endblock %}
