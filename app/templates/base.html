@@ -28,8 +28,8 @@
     <div class="header clearfix">
       <nav>
         <ul class="nav nav-pills pull-right red">
-          <li role="presentation" {% if request.path == '/drink/' %}class="active"{% endif %}>
-            <a href="{{ url_for('drink') }}">Drink</a>
+          <li role="presentation" {% if request.path == '/' %}class="active"{% endif %}>
+            <a href="/">Instructions</a>
           </li>
 
           {% if current_user.is_authenticated() %}
