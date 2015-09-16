@@ -64,7 +64,7 @@ class Response(db.Model):
 
 	def __init__(self, session_id, time, user_id, round_num, winner,
 		fav_trump, fav_bush, fav_walker, fav_carson, fav_huckabee, 
-		fav_cruz, fav_rubio, fav_paul, fav_christie, fav_kasich):
+		fav_cruz, fav_rubio, fav_paul, fav_christie, fav_kasich, fav_fiorina):
 
 		self.session_id = session_id
 		self.time = time
