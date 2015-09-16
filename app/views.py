@@ -145,7 +145,8 @@ def record():
 			fav_rubio = sub.fav_rubio.data, 
 			fav_paul = sub.fav_paul.data, 
 			fav_christie = sub.fav_christie.data, 
-			fav_kasich = sub.fav_kasich.data)
+			fav_kasich = sub.fav_kasich.data,
+			fav_fiorina = sub.fav_fiorina.data)
 
 		db.session.add(response)
 		db.session.commit()

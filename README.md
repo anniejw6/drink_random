@@ -40,12 +40,19 @@ Download http://postgresapp.com/
 Add to bash_profile: http://postgresapp.com/documentation/cli-tools.html
 ```
 createdb appdb
-python
+heroku run python
 from app import db
 db.create_all()
 quit()
 ```
 
+Dealing with Postrges on Heroku
+```
+# create local
+heroku pg:pull HEROKU_DB_NAME local_name --app repub-drink
+
+heroku pg:reset HEROKU_DB_NAME
+```
 # Heroku
 Install Heroku toolbelt
 ```
