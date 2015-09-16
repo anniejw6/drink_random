@@ -32,7 +32,7 @@ def user_loader(user_id):
 def randShots(seed):
 
 	prng = RandomState(seed)
-	treat = prng.randint(0, 2)
+	treat = prng.randint(0, 3)
 	if treat == 1:
 		return('1 Shot')
 	else:
