@@ -57,6 +57,7 @@ class Response(db.Model):
 	fav_paul = db.Column(db.String(300))
 	fav_christie = db.Column(db.String(300))
 	fav_kasich = db.Column(db.String(300))
+	fav_fiorina = db.Column(db.String(300))
 
 
 	# user_id = db.Column(db.Integer, db.ForeignKey('user.user_id'))
@@ -80,6 +81,7 @@ class Response(db.Model):
 		self.fav_paul = fav_paul
 		self.fav_christie = fav_christie
 		self.fav_kasich = fav_kasich
+		self.fav_fiorina = fav_fiorina
 
 	def __repr__(self):
 		return '<ID: %r>' % self.response_id
