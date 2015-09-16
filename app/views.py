@@ -90,7 +90,8 @@ def drink():
 	db.session.add(assign)
 	db.session.commit()
 
-	return render_template('randomize_post.html', treat = assignment)
+	return render_template('randomize_post.html', treat = assignment,
+		round = session['round'])
 
 
 # Record Errors
