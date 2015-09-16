@@ -101,7 +101,8 @@ def record():
 	# Create Form for Favorability
 	choices_winner = [('trump', 'Donald Trump'), ('bush', 'Jeb Bush'), ('walker', 'Scott Walker'),
 		('carson', 'Ben Carson'), ('huckabee', 'Mike Huckabee'), ('cruz', 'Ted Cruz'), ('rubio', 'Marco Rubio'),
-		('paul', 'Rand Paul'), ('christie', 'Chris Christie'), ('kasich', 'John Kasich')]
+		('paul', 'Rand Paul'), ('christie', 'Chris Christie'), ('kasich', 'John Kasich'),
+		('fiorina', 'Carly Fiorina')]
 	random.shuffle(choices_winner)
 
 	class Submission(Form):
@@ -112,7 +113,8 @@ def record():
 	('Scott Walker', 'fav_walker'), ('Ben Carson', 'fav_carson'), 
 	('Mike Huckabee', 'fav_huckabee'), ('Ted Cruz', 'fav_cruz'), 
 	('Marco Rubio', 'fav_rubio'), ('Rand Paul', 'fav_paul'), 
-	('Chris Christie', 'fav_christie'), ('John Kasich', 'fav_kasich')]
+	('Chris Christie', 'fav_christie'), ('John Kasich', 'fav_kasich'), 
+	('Carly Fiorina', 'fav_fiorina')]
 	random.shuffle(attributes)
 
 	for label, name in attributes:
