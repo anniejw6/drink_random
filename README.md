@@ -51,7 +51,11 @@ Dealing with Postrges on Heroku
 # create local
 heroku pg:pull HEROKU_DB_NAME local_name --app repub-drink
 
+# reset
 heroku pg:reset HEROKU_DB_NAME
+
+# log in
+heroku pg:psql
 ```
 # Heroku
 Install Heroku toolbelt
